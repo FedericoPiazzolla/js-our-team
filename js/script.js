@@ -29,4 +29,28 @@ const workers = [
     name:"Barbara Ramos",
     assignment: "Graphic Designer",
   },
-]
+];
+console.log(workers);
+
+const rowElem = document.querySelector(".row");
+let workersElem = "";
+
+// stampo le informazioni per ogni lavoratore in console
+for (let i = 0; i < workers.length; i++) {
+  const curWorkers = workers[i];
+  workersElem += `
+    <div class="col">
+      <div class="card">
+        <img src="img/${curWorkers.imgWorker}" alt="imagine of workers">
+        <h3>${curWorkers.name}</h3>
+        <h4>${curWorkers.assignment}</h4>
+      </div>
+    </div>
+  `;
+  console.log(curWorkers.imgWorker);
+  console.log(curWorkers.name);
+  console.log(curWorkers.assignment);
+  console.log("---------------------------");
+};
+
+rowElem.innerHTML = workersElem;
