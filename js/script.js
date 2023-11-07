@@ -30,7 +30,6 @@ const workers = [
     assignment: "Graphic Designer",
   },
 ];
-console.log(workers);
 
 const rowElem = document.querySelector(".row");
 let workersElem = "";
