@@ -46,10 +46,6 @@ for (let i = 0; i < workers.length; i++) {
       </div>
     </div>
   `;
-  console.log(curWorkers.imgWorker);
-  console.log(curWorkers.name);
-  console.log(curWorkers.assignment);
-  console.log("---------------------------");
 };
 
 rowElem.innerHTML = workersElem;
